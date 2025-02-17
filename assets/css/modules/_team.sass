@@ -1,0 +1,80 @@
+.team
+  display: flex
+  justify-content: space-between
+  width: 100%
+  max-width: 1200px
+  margin: 0 auto
+  padding: 90px
+  align-items: center;
+
+  .team-advisor
+    flex: 1
+    display: flex
+    flex-direction: column
+    align-items: center
+    padding: 70px
+
+    img
+      width: 75%
+      max-width: 300px
+      aspect-ratio: 3 / 4 // Changed for an oval shape
+      object-fit: cover
+      border-radius: 50% // Added to make the image oval
+      margin-bottom: 20px
+
+    .member-name
+      font-size: 30px
+      margin-bottom: 10px
+
+    .member-title
+      font-size: 25px
+      margin-bottom: 10px
+
+    .linkedin-button
+      margin-bottom: 20px
+      padding: 10px 20px
+      background-color: $highlight
+      color: $white
+      text-decoration: none
+      font-weight: bold
+      text-transform: uppercase
+
+    p
+      text-align: center
+      padding: 0 10px
+
+  .team-members
+    flex: 2
+    display: flex
+    flex-direction: column
+    align-items: flex-start
+    padding: 20px
+
+    ul
+      list-style: none // Removes default bullets
+      padding: 0
+
+      li
+        margin-bottom: 20px
+        position: relative
+        padding-left: 30px
+
+        &::before
+          content: '•'
+          color: $highlight // Fancy bullet color
+          font-size: 20px
+          position: absolute
+          left: 0
+          top: 0
+
+        span
+          margin-right: 10px
+          font-size: 23px;
+
+        .linkedin-button
+          padding: 5px 10px
+          background-color: $highlight
+          color: $white
+          text-decoration: none
+          font-weight: bold
+          text-transform: uppercase
