@@ -1090,9 +1090,8 @@ body {
 .team .team-advisor img {
   width: 75%;
   max-width: 300px;
-  aspect-ratio: 3/4;
+  aspect-ratio: 1/1;
   object-fit: cover;
-  border-radius: 50%;
   margin-bottom: 20px;
 }
 .team .team-advisor .member-name {
