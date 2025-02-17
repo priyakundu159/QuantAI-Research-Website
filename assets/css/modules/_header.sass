@@ -4,7 +4,7 @@
   left: 0
   display: flex
   width: 100%
-  height: 70px
+  height: px-to-vh(70px)
   align-items: center
   justify-content: space-between
   z-index: 10
@@ -15,50 +15,50 @@
     align-items: center
     text-decoration: none
     color: $white
-    margin-left: 75px;
+    margin-left: px-to-vh(75px);
 
     img
       width: 15%;
 
     p
-      margin: 0 0 0 10px
-      font-size: 16px
+      margin: 0 0 0 px-to-vh(10px)
+      font-size: px-to-vh(16px)
       font-weight: 700
 
   &--nav-toggle
     display: flex
-    width: 50px
-    height: 50px
+    width: px-to-vh(50px)
+    height: px-to-vh(50px)
     flex-direction: column
     align-items: center
     justify-content: center
     cursor: pointer
-    margin-right: 75px;
+    margin-right: px-to-vh(75px);
 
     span,
     &::before,
     &::after
       content: ""
       position: relative
-      width: 16px
-      height: 2px
+      width: px-to-vh(16px)
+      height: px-to-vh(2px)
       background-color: $white
 
     &::before
-      bottom: 5px
-      width: 23px
+      bottom: px-to-vh(5px)
+      width: px-to-vh(23px)
 
     &::after
-      top: 5px
-      width: 23px
+      top: px-to-vh(5px)
+      width: px-to-vh(23px)
 
   &--cta
     position: absolute
     top: 50%
     left: 50%
     transform: translate(-50%, -50%)
-    padding: 0 20px
-    line-height: 30px
+    padding: 0 px-to-vh(20px)
+    line-height: px-to-vh(30px)
     text-decoration: none
     color: $white
     font-weight: 700
@@ -77,5 +77,5 @@
       visibility: visible
       transition: opacity .4s ease-in-out .4s
 
-    @media (max-width: 767px)
+    @media (max-width: px-to-vh(767px))
       display: none

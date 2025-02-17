@@ -1,19 +1,19 @@
 .work
   position: relative
   display: flex
-  width: 960px
+  width: px-to-vh(960px)
   max-width: 80%
   height: 100%
   flex-direction: column
   justify-content: center
   margin: 0 auto
 
-  @media (max-width: 1180px)
+  @media (max-width: px-to-vh(1180px))
     max-width: 100%
 
   h2
-    margin: 0 0 20px 0
-    font-size: 30px
+    margin: 0 0 px-to-vh(20px) 0
+    font-size: px-to-vh(30px)
     text-align: center
 
   &--lockup
@@ -37,19 +37,19 @@
           color: #858585
 
         &-title
-          margin-top: 10px
-          font-size: 12px
+          margin-top: px-to-vh(10px)
+          font-size: px-to-vh(12px)
           font-weight: 700
           text-transform: uppercase
 
         &-description
           display: none
-          max-width: 250px
+          max-width: px-to-vh(250px)
           margin: 0 auto
 
         &-image
-          width: 150px
-          height: 150px
+          width: px-to-vh(150px)
+          height: px-to-vh(150px)
           margin: 0 auto
           border-radius: 50%
           overflow: hidden
@@ -72,7 +72,7 @@
 
         &-center
           position: relative
-          top: 30px
+          top: px-to-vh(30px)
           left: 50%
           transform: translateX(-50%)
           display: block
@@ -81,24 +81,24 @@
             color: $white
 
           .slider--item-title
-            margin-top: 25px
-            font-size: 23px
+            margin-top: px-to-vh(25px)
+            font-size: px-to-vh(23px)
 
           .slider--item-description
             display: block
-            font-size: 17px;
+            font-size: px-to-vh(17px);
 
           .slider--item-image
-            width: 300px
-            height: 300px
+            width: px-to-vh(300px)
+            height: px-to-vh(300px)
 
     .slider--next,
     .slider--prev
       position: absolute
-      top: 160px
+      top: px-to-vh(160px)
       display: flex
-      width: 50px
-      height: 50px
+      width: px-to-vh(50px)
+      height: px-to-vh(50px)
       align-items: center
       justify-content: center
       background-color: $muted-gray
@@ -106,7 +106,7 @@
       cursor: pointer
 
       svg
-        width: 20px
+        width: px-to-vh(20px)
         fill: $white
 
     .slider--next
@@ -115,7 +115,7 @@
     .slider--prev
       left: 0
 
-@media (max-width: 900px)
+@media (max-width: px-to-vh(900px))
 
   .work
 
@@ -126,20 +126,20 @@
         &--item
 
           &-image
-            width: 120px
-            height: 120px
+            width: px-to-vh(120px)
+            height: px-to-vh(120px)
 
           &-center
 
             .slider--item-image
-              width: 240px
-              height: 240px
+              width: px-to-vh(240px)
+              height: px-to-vh(240px)
 
       .slider--next,
       .slider--prev
-        top: 130px
+        top: px-to-vh(130px)
 
-@media (max-width: 767px)
+@media (max-width: px-to-vh(767px))
 
   .work
 
@@ -151,20 +151,20 @@
         &--item
 
           &-image
-            width: 90px
-            height: 90px
+            width: px-to-vh(90px)
+            height: px-to-vh(90px)
 
           &-center
 
             .slider--item-image
-              width: 190px
-              height: 190px
+              width: px-to-vh(190px)
+              height: px-to-vh(190px)
 
       .slider--next,
       .slider--prev
-        top: 105px
+        top: px-to-vh(105px)
 
-@media (max-width: 600px)
+@media (max-width: px-to-vh(600px))
 
   .work
 

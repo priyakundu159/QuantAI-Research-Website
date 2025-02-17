@@ -1,49 +1,49 @@
 .intro
   position: relative
   display: flex
-  width: 900px
+  width: px-to-vh(900px)
   max-width: 75%
   height: 100%
   flex-direction: column
   justify-content: flex-start
   margin: 0 auto
 
-  @media (max-width: 1180px)
+  @media (max-width: px-to-vh(1180px))
     max-width: 100%
 
   &--banner
     position: relative
-    height: 420px
-    margin-top: 150px
+    height: px-to-vh(420px)
+    margin-top: px-to-vh(150px)
 
     &::before
       content: ""
       position: absolute
-      bottom: 20px
-      left: -15px
+      bottom: px-to-vh(20px)
+      left: px-to-vh(-15px)
       right: 0
-      height: 2px
+      height: px-to-vh(2px)
       background-color: $muted-gray
 
     &::after
       content: ""
       position: absolute
-      bottom: 18px
+      bottom: px-to-vh(18px)
       left: 0
-      width: 30px
-      height: 4px
+      width: px-to-vh(30px)
+      height: px-to-vh(4px)
       background-color: $highlight
 
     h1
       position: relative
-      font-size: 68px
+      font-size: px-to-vh(68px)
       font-weight: 900
       line-height: 1
       z-index: 1
 
     button
       position: relative
-      padding: 5px 17px 5px 12px
+      padding: px-to-vh(5px) px-to-vh(17px) px-to-vh(5px) px-to-vh(12px)
       font-weight: 700
       text-transform: uppercase
       background-color: transparent
@@ -52,7 +52,7 @@
       .btn-background
         position: absolute
         top: 0
-        left: 23px
+        left: px-to-vh(23px)
         right: 0
         height: 100%
         background-color: $highlight
@@ -68,14 +68,14 @@
 
       svg
         position: relative
-        left: 5px
-        width: 15px
+        left: px-to-vh(5px)
+        width: px-to-vh(15px)
         fill: $white
 
     img
       position: absolute
-      bottom: 21px
-      right: -12px
+      bottom: px-to-vh(21px)
+      right: px-to-vh(-12px)
 
   &--options
     display: flex
@@ -85,7 +85,7 @@
     list-style: none
 
     & > a
-      max-width: 250px
+      max-width: px-to-vh(250px)
       text-decoration: none
       color: $muted-gray
       transition: color .2s ease-in-out
@@ -94,46 +94,46 @@
         color: $white
 
     h3
-      font-size: 23px
+      font-size: px-to-vh(23px)
       text-transform: uppercase
 
     p
       margin-bottom: 0
-      font-size: 20px;
+      font-size: px-to-vh(20px);
 
-@media (max-width: 900px)
+@media (max-width: px-to-vh(900px))
 
   .intro
 
     &--banner
-      height: 380px
+      height: px-to-vh(380px)
 
       h1
-        font-size: 55px
+        font-size: px-to-vh(55px)
 
       img
-        width: 430px
+        width: px-to-vh(430px)
 
     &--options
 
       & > a
-        margin-right: 30px
+        margin-right: px-to-vh(30px)
 
         &:last-child
           margin-right: 0
 
-@media (max-width: 767px)
+@media (max-width: px-to-vh(767px))
 
   .intro
 
     &--banner
-      height: 305px
+      height: px-to-vh(305px)
 
       h1
-        font-size: 44px
+        font-size: px-to-vh(44px)
 
       img
-        width: 330px
+        width: px-to-vh(330px)
 
     &--options
       display: block
@@ -141,25 +141,25 @@
       & > a
         display: block
         max-width: 100%
-        margin: 0 0 30px 0
+        margin: 0 0 px-to-vh(30px) 0
 
         &:last-child
           margin-bottom: 0
 
-@media (max-width: 600px)
+@media (max-width: px-to-vh(600px))
 
   .intro
 
     &--banner
-      height: 360px
+      height: px-to-vh(360px)
 
       h1
-        font-size: 55px
+        font-size: px-to-vh(55px)
 
       img
         display: none
 
-@media (max-width: 600px) and (max-height: 750px)
+@media (max-width: px-to-vh(600px)) and (max-height: px-to-vh(750px))
 
   .intro
 
