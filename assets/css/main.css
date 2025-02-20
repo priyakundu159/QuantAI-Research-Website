@@ -919,7 +919,7 @@ body {
   position: relative;
   z-index: 2;
   font-size: 3.007518797vh;
-  color: rgb(93, 92, 92);
+  color: rgb(197, 196, 196);
   margin-top: 2.5062656642vh;
 }
 .about--options {
@@ -1052,7 +1052,7 @@ body {
   margin: 0 auto 3.1328320802vh auto;
 }
 .contact--lockup .modal--options li:nth-child(1) {
-  background-color: rgb(93, 92, 92);
+  background-color: rgb(23, 123, 222);
 }
 .contact--lockup .modal--options li:nth-child(2) {
   background-color: rgb(93, 92, 92);
